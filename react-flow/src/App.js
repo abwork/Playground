@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import TestComponent from './TestComponent';
+import TestStateComponent from './TestStateComponent';
 import './App.css';
 
-class App extends Component {
+class App extends Component <{}> {
   render() {
     return (
       <div className="App">
-        <TestComponent name={'React Flow'} quantity={23}/>
+        <TestComponent name={'LiteCoin'} quantity={1}/>
+        <TestStateComponent initial ={10} />
       </div>
     );
   }
